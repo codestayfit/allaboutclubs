@@ -3,5 +3,12 @@
     "@appTitle": {
         "description": "Titel der App"
     },
-    "million": "Millionen"
+    "million": "Millionen",
+    "theClub": "Der Club",
+    "from": "aus",
+    "hasAValueOf": "hat einen Wert von",
+    "euro": "Euro",
+    "hasManagedToAchieve": "konnte bislang",
+    "victoriesAtEuropeanLevelSoFar": "Siege auf europäischer Ebene erreichen",
+    "errTextFailedUrl": "Herunterladen der Daten von angegebenen URL fehlgeschlagen!"
 }

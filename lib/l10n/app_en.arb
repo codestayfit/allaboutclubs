@@ -1,3 +1,6 @@
 {
-    "appTitle": "all about clubs"
+    "appTitle": "all about clubs",
+    "@appTitle": {
+        "description": "Title of the app"
+    }
 }

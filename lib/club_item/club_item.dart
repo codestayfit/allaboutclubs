@@ -1,4 +1,5 @@
 import 'package:allaboutclubs/club_data/club_data.dart';
+import 'package:allaboutclubs/club_item/club_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -24,12 +25,18 @@ class _ClubItemState extends State<ClubItem> {
           color: Colors.white,
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) =>
+                        ClubDetail(clubData: widget.clubData)));
+          },
           child: Row(
             children: [
               SizedBox(
                 key: UniqueKey(),
-                width: 10,
+                width: 5,
               ),
               SizedBox(
                 width: 100,
@@ -40,53 +47,58 @@ class _ClubItemState extends State<ClubItem> {
                 key: UniqueKey(),
                 width: 25,
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Spacer(
-                    key: UniqueKey(),
-                    flex: 7,
-                  ),
-                  Text(
-                    widget.clubData.name,
-                    style: const TextStyle(
-                        fontSize: 23, fontWeight: FontWeight.bold),
-                  ),
-                  Spacer(
-                    key: UniqueKey(),
-                    flex: 1,
-                  ),
-                  Text(
-                    widget.clubData.country,
-                    style: const TextStyle(
-                        fontSize: 14, fontWeight: FontWeight.normal),
-                  ),
-                  Spacer(
-                    key: UniqueKey(),
-                    flex: 1,
-                  ),
-                  Align(
-                    alignment: Alignment.bottomRight,
-                    child: Text(
-                      widget.clubData.value.toString() +
-                          " " +
-                          AppLocalizations.of(context)!.million,
-                      style: const TextStyle(
-                          fontSize: 17, fontWeight: FontWeight.normal),
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Spacer(
+                      key: UniqueKey(),
+                      flex: 7,
                     ),
-                  ),
-                  Spacer(
-                    key: UniqueKey(),
-                    flex: 5,
-                  ),
-                ],
+                    Text(
+                      widget.clubData.name,
+                      style: const TextStyle(
+                          fontSize: 23, fontWeight: FontWeight.bold),
+                    ),
+                    Spacer(
+                      key: UniqueKey(),
+                      flex: 1,
+                    ),
+                    Text(
+                      widget.clubData.country,
+                      style: const TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.grey,
+                      ),
+                    ),
+                    Spacer(
+                      key: UniqueKey(),
+                      flex: 1,
+                    ),
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Container(
+                        margin: const EdgeInsets.only(right: 20),
+                        child: Text(
+                          widget.clubData.value.toString() +
+                              " " +
+                              AppLocalizations.of(context)!.million,
+                          style: const TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Spacer(
+                      key: UniqueKey(),
+                      flex: 5,
+                    ),
+                  ],
+                ),
               ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [],
-              )
             ],
           ),
         ),

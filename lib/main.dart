@@ -1,4 +1,5 @@
 import 'package:allaboutclubs/clublist.dart';
+import 'package:allaboutclubs/global/global.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -16,8 +17,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: const ColorScheme.light(
-          primary: Color(0xFF01C13B),
-          secondary: Color(0xFF01C13B),
+          primary: Global.appColor,
+          secondary: Global.appColor,
         ),
       ),
       home: const ClubList(),

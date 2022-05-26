@@ -10,5 +10,6 @@
     "euro": "Euro",
     "hasManagedToAchieve": "konnte bislang",
     "victoriesAtEuropeanLevelSoFar": "Siege auf europäischer Ebene erreichen",
-    "errTextFailedUrl": "Herunterladen der Daten von angegebenen URL fehlgeschlagen!"
+    "failedToDownloadData": "Herunterladen der Daten fehlgeschlagen!",
+    "pullDownOrPressButtonToRefresh": "Nach unten wischen oder Button drücken um es erneut zu versuchen!"
 }

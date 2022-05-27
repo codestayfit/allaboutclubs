@@ -127,7 +127,7 @@ class _ClubListState extends State<ClubList> {
                           child: ElevatedButton(
                             onPressed: refresh,
                             child: Text(
-                              "Refresh...",
+                              AppLocalizations.of(context)!.refresh,
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onPrimary,
                                 fontSize: 17,

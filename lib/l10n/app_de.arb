@@ -11,5 +11,6 @@
     "hasManagedToAchieve": "konnte bislang",
     "victoriesAtEuropeanLevelSoFar": "Siege auf europäischer Ebene erreichen",
     "failedToDownloadData": "Herunterladen der Daten fehlgeschlagen!",
-    "pullDownOrPressButtonToRefresh": "Nach unten wischen oder Button drücken um es erneut zu versuchen!"
+    "pullDownOrPressButtonToRefresh": "Nach unten wischen oder Button drücken um es erneut zu versuchen!",
+    "refresh": "Aktualisieren..."
 }

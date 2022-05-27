@@ -1,5 +1,5 @@
 import 'package:allaboutclubs/club_data/club_data.dart';
-import 'package:allaboutclubs/club_item/club_detail.dart';
+import 'package:allaboutclubs/club_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 

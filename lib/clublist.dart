@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:developer';
 
 import 'package:allaboutclubs/club_data/club_data.dart';
-import 'package:allaboutclubs/club_item/club_detail.dart';
 import 'package:allaboutclubs/club_item/club_item.dart';
 import 'package:allaboutclubs/global/global.dart';
 import 'package:flutter/material.dart';
